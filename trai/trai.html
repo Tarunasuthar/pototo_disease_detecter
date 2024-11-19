@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="trai.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Classifier</h1>
+        <form id="uploadForm">
+            <input type="file" id="imageInput" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Prediction</h2>
+            <img id="uploadedImage" alt="Uploaded Image" style="max-width: 100%; height: auto; margin-top: 10px;"/>
+            <p><strong>Class:</strong> <span id="predictedClass"></span></p>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+        </div>
+    </div>
+    <script src="trai.js"></script>
+</body>
+</html>
